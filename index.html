@@ -1,140 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Nine Star Financial Solutions - Trusted Financial Guidance">
 <title>Nine Star Financial Solutions</title>
-
 <style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#0b1f3a;
-color:white;
-text-align:center;
-}
-
-header{
-padding:60px 20px;
-background:linear-gradient(135deg,#0b1f3a,#1e3c72);
-}
-
-h1{
-font-size:48px;
-color:gold;
-}
-
-.tag{
-font-size:22px;
-margin-top:10px;
-}
-
-.btn{
-display:inline-block;
-margin:15px;
-padding:15px 35px;
-background:gold;
-color:#000;
-text-decoration:none;
-font-weight:bold;
-border-radius:8px;
-}
-
-section{
-padding:50px 20px;
-}
-
-.card{
-background:white;
-color:black;
-max-width:900px;
-margin:auto;
-padding:30px;
-border-radius:15px;
-}
-
-ul{
-text-align:left;
-display:inline-block;
-line-height:2;
-font-size:20px;
-}
-
-footer{
-background:#071426;
-padding:25px;
-margin-top:40px;
-}
-</style>
-</head>
-
+:root{--n:#06152f;--n2:#0b2550;--g:#f5c542;--w:#fff;--m:#b8c5d8}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--n);color:var(--w);line-height:1.6}
+a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+nav{position:fixed;top:0;width:100%;z-index:9;background:#06152fe8;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff20}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:800}.brand img{width:50px;height:50px;border-radius:10px;object-fit:cover}.brand small{display:block;color:var(--g);font-size:10px;letter-spacing:1.5px}.links{display:flex;gap:24px;font-size:14px}.links a:hover{color:var(--g)}
+.hero{min-height:820px;padding:125px 0 70px;display:flex;align-items:center;background:radial-gradient(circle at 80% 20%,#f5c54222,transparent 28%),linear-gradient(135deg,#031025,#0b2855 55%,#06152f)}
+.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.tag{color:#ffe28b;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(45px,6vw,76px);line-height:1.02;margin:14px 0}.gold{color:var(--g)}.lead{font-size:19px;color:#d8e2f0;max-width:650px}
+.btn{display:inline-block;padding:14px 21px;border-radius:12px;font-weight:800;margin:7px 5px 0 0;border:1px solid #ffffff2b}.primary{background:linear-gradient(135deg,#f5c542,#ffe28b);color:#06152f}
+.logoCard{padding:18px;border-radius:26px;background:#ffffff10;border:1px solid #ffffff25;box-shadow:0 25px 70px #0008}.logoCard img{width:100%;border-radius:18px;display:block}
+section{padding:90px 0}.dark{background:#071a38}.head{text-align:center;max-width:760px;margin:0 auto 40px}.head h2{font-size:38px;margin:8px}.head p{color:var(--m)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card,.panel{background:linear-gradient(145deg,#0d2a57,#091d3d);border:1px solid #ffffff18;border-radius:20px;padding:23px;box-shadow:0 15px 35px #0003}.icon{font-size:25px;color:var(--g)}.card h3{margin:8px 0}.card p{color:var(--m);font-size:14px;margin:0}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:22px}input,select{width:100%;padding:13px;border-radius:10px;border:1px solid #ffffff20;background:#06152f;color:#fff;margin:6px 0 12px}label{font-size:13px;color:#cbd6e5}.result{padding:14px;border-radius:10px;background:#f5c54216;border:1px solid #f5c54255;color:#ffe59a}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.points{display:grid;grid-template-columns:1fr 1fr;gap:12px}.point{padding:13px;background:#ffffff08;border:1px solid #ffffff14;border-radius:12px;color:#d5dfed}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact div{padding:20px;background:#0b2349;border:1px solid #ffffff18;border-radius:20px}.contact p{margin:10px 0;color:#d8e2f0}.muted{color:var(--m)}.notice{font-size:11px;color:#8fa0b8;margin-top:20px}
+footer{padding:32px 0;border-top:1px solid #ffffff18;color:#91a0b7}.float{position:fixed;right:18px;bottom:18px;z-index:10;display:flex;flex-direction:column;gap:10px}.float a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:20px;font-weight:bold;box-shadow:0 10px 30px #0006}.call{background:#fff;color:#06152f}.wa{background:var(--g);color:#06152f}
+@media(max-width:850px){.links{display:none}.heroGrid,.about,.contact,.tools{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.hero{min-height:auto}.brand span{font-size:14px}}
+@media(max-width:540px){.grid,.points{grid-template-columns:1fr}h1{font-size:45px}}
+</style></head>
 <body>
+<nav><div class="wrap nav"><a class="brand" href="#home"><img src="logo.png"><span>Nine⭐ Star Financial Solutions<small>TRUSTED FINANCIAL GUIDANCE</small></span></a>
+<div class="links"><a href="#services">Services</a><a href="#tools">Calculators</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></nav>
 
-<header>
+<section class="hero" id="home"><div class="wrap heroGrid"><div>
+<div class="tag">Professional Loan Consultancy</div>
+<h1>Financial solutions for <span class="gold">every need.</span></h1>
+<p class="lead">Personal, home, business, mortgage, education and vehicle loan assistance with clear guidance and a simple application journey.</p>
+<a class="btn primary" href="tel:+919032599296">☎ Call Now</a>
+<a class="btn" href="https://wa.me/919666822141?text=Hello%20Nine%20Star%20Financial%20Solutions%2C%20I%20am%20interested%20in%20a%20loan." target="_blank">💬 WhatsApp</a>
+<a class="btn" href="#application">Apply Online →</a>
+<p class="notice">Independent financial consultancy. Approval, interest rates and terms are subject to the respective lender's eligibility and policies.</p>
+</div><div class="logoCard"><img src="logo.png" alt="Nine Star Financial Solutions"></div></div></section>
 
-<h1>Nine Star Financial Solutions</h1>
+<section id="services" class="dark"><div class="wrap"><div class="head"><div class="tag">What we offer</div><h2>Our Loan Services</h2><p>Guidance for a range of financing requirements, subject to lender eligibility.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">₹</div><h3>Personal Loans</h3><p>Assistance for eligible salaried and self-employed applicants.</p></div>
+<div class="card"><div class="icon">⌂</div><h3>Home Loans</h3><p>Home purchase, construction and related finance guidance.</p></div>
+<div class="card"><div class="icon">▣</div><h3>Business Loans</h3><p>Business funding and working-capital assistance.</p></div>
+<div class="card"><div class="icon">▤</div><h3>Mortgage Loans</h3><p>Loan against eligible property, subject to assessment.</p></div>
+<div class="card"><div class="icon">↗</div><h3>Balance Transfer</h3><p>Explore eligible options for existing loan transfer.</p></div>
+<div class="card"><div class="icon">🎓</div><h3>Education Loans</h3><p>Education financing guidance for eligible applicants.</p></div>
+<div class="card"><div class="icon">🚗</div><h3>Car Loans</h3><p>New and used vehicle financing assistance.</p></div>
+<div class="card"><div class="icon">⚕</div><h3>Professional Loans</h3><p>Financing guidance for eligible professionals.</p></div>
+</div></div></section>
 
-<p class="tag">Trusted Financial Guidance</p>
+<section id="tools"><div class="wrap"><div class="head"><div class="tag">Smart tools</div><h2>EMI Calculator & Quick Enquiry</h2><p>Indicative estimates only; final terms are decided by the lender.</p></div>
+<div class="tools"><div class="panel"><h2>EMI Calculator</h2><label>Loan Amount (₹)</label><input id="amt" type="number" value="1000000">
+<label>Annual Interest Rate (%)</label><input id="rate" type="number" step=".01" value="10.5">
+<label>Tenure (Years)</label><input id="yrs" type="number" value="5">
+<button class="btn primary" onclick="emi()">Calculate EMI</button><div class="result" id="out">Enter values and calculate.</div></div>
+<div class="panel" id="application"><h2>Quick Loan Enquiry</h2><form onsubmit="lead(event)">
+<label>Name</label><input id="name" required placeholder="Your name"><label>Mobile</label><input id="mob" required placeholder="10-digit mobile number">
+<label>Loan Type</label><select id="type"><option>Personal Loan</option><option>Home Loan</option><option>Business Loan</option><option>Mortgage Loan</option><option>Car Loan</option><option>Education Loan</option></select>
+<label>Required Amount (₹)</label><input id="need" type="number" placeholder="Approximate amount">
+<button class="btn primary">Send on WhatsApp</button></form></div></div></div></section>
 
-<a class="btn" href="tel:9666822141">Call Now</a>
+<section id="about" class="dark"><div class="wrap about"><div><div class="tag">About us</div><h2>Guidance you can understand. Solutions you can explore.</h2><p class="muted">Nine Star Financial Solutions provides loan consultancy and application assistance. We help customers understand suitable financing options, basic documentation and next steps before applying.</p><div class="points"><div class="point">✓ Transparent guidance</div><div class="point">✓ Multiple loan categories</div><div class="point">✓ Application assistance</div><div class="point">✓ Customer-focused support</div></div></div>
+<div class="panel"><h2 class="gold">Why Nine Star?</h2><p>We focus on making the loan journey easier from requirement assessment to application support.</p><p class="notice">We do not guarantee loan approval. All applications are subject to lender criteria, documentation, verification, credit assessment and applicable policies.</p></div></div></section>
 
-<a class="btn" href="https://wa.me/919666822141">WhatsApp</a>
+<section id="contact"><div class="wrap"><div class="head"><div class="tag">Get in touch</div><h2>Contact Us</h2></div><div class="contact">
+<div><p><span class="muted">Call</span><br><b><a href="tel:+919032599296">9032599296</a></b></p>
+<p><span class="muted">WhatsApp</span><br><b><a href="https://wa.me/919666822141" target="_blank">9666822141</a></b></p>
+<p><span class="muted">Email</span><br><b><a href="mailto:Ninestarfinancialsolutions@outlook.com">Ninestarfinancialsolutions@outlook.com</a></b></p>
+<p><span class="muted">Office</span><br><b>Plot No-3, Sy.No's 787, 788, 789,<br>Sai Homes Colony, Road No-02,<br>Badangpet, Telangana - 500058</b></p>
+<a class="btn primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=8G3F%2BWFJ%20W%20B%20Bakery%20Annapurna%20Colony%20Badangpet%20Telangana%20500058">📍 Open Google Maps</a></div>
+<div><iframe title="Google Map" style="width:100%;height:390px;border:0;border-radius:20px" loading="lazy" src="https://www.google.com/maps?q=8G3F%2BWFJ%20W%20B%20Bakery%20Annapurna%20Colony%20Badangpet%20Telangana%20500058&output=embed"></iframe></div>
+</div></div></section>
 
-</header>
+<div class="float"><a class="call" href="tel:+919032599296">☎</a><a class="wa" target="_blank" href="https://wa.me/919666822141?text=Hello%20Nine%20Star%20Financial%20Solutions">✆</a></div>
+<footer><div class="wrap"><b style="color:#fff">Nine⭐ Star Financial Solutions</b> — Trusted Financial Guidance<br>© 2026 Nine Star Financial Solutions. All rights reserved.<p class="notice">Information is for enquiry purposes. Loan approval, rates, fees and terms are subject to the respective lender.</p></div></footer>
 
-<section>
-
-<div class="card">
-
-<h2>Our Services</h2>
-
-<ul>
-
-<li>Personal Loans</li>
-
-<li>Home Loans</li>
-
-<li>Business Loans</li>
-
-<li>Mortgage Loans</li>
-
-<li>Loan Against Property</li>
-
-<li>Balance Transfer</li>
-
-<li>Education Loans</li>
-
-<li>Car Loans</li>
-
-<li>Doctor Loans</li>
-
-<li>OD Loans</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Contact</h2>
-
-<h3>MAKAM SREEKANTH</h3>
-
-<p>📞 9666822141</p>
-
-<p>📞 9032599296</p>
-
-<p>📧 ninestarfinancialsoltions@outlook.com</p>
-
-</section>
-
-<footer>
-
-© 2026 Nine Star Financial Solutions
-
-</footer>
-
-</body>
-</html>
+<script>
+function money(x){return new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(x)}
+function emi(){let P=+amt.value,r=+rate.value/1200,n=+yrs.value*12,e=r?P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):P/n;if(P>0&&n>0)out.innerHTML='<b>Estimated EMI: '+money(e)+'</b><br>Total interest: '+money(e*n-P)+'<br>Total repayment: '+money(e*n);else out.textContent='Please enter valid values.'}
+function lead(e){e.preventDefault();let t=`Hello Nine Star Financial Solutions,%0AName: ${encodeURIComponent(name.value)}%0AMobile: ${encodeURIComponent(mob.value)}%0ALoan: ${encodeURIComponent(type.value)}%0AAmount: ${encodeURIComponent(need.value||'Not specified')}`;open('https://wa.me/919666822141?text='+t,'_blank')}
+emi();
+</script></body></html>
